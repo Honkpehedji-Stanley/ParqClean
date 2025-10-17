@@ -1,0 +1,44 @@
+# --- Environnement Python ---
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+*.egg
+build/
+dist/
+
+# --- Jupyter / Notebook ---
+.ipynb_checkpoints/
+.notebook/
+*.nbconvert/
+*.ipynb_checkpoints/
+
+# --- Données locales ---
+data/raw/*
+data/clean/*
+
+# --- Logs et temporaires ---
+*.log
+.DS_Store
+*.tmp
+*.bak
+
+# --- Tests / coverage ---
+.coverage
+.cache/
+.pytest_cache/
+
+# --- VSCode / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- Docs générées pour GitHub Pages ---
+docs/*.html
+
+# --- Secrets / tokens ---
+.env
+*.env

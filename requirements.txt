@@ -1,0 +1,8 @@
+pandas
+pyarrow
+fastparquet
+click
+pytest
+nbconvert
+jupyter
+matplotlib
