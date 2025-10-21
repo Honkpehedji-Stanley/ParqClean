@@ -10,8 +10,8 @@ from parqclean.io import write_parquet
 @click.option("--partition", "-p", multiple=True)
 def run(input, output, partition):
     df = read_csv_files(input)
-    # validations (exemple minimal)
     check_null_threshold(df)
     df = normalize_columns(df)
-    # conversions...
+    df = convert_dates(df, date_cols=["date_column", "date", "dateTime"])
+    df = drop_duplicates(df)
     write_parquet(df, output, partition_cols=list(partition) if partition else None)
